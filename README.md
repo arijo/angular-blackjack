@@ -4,7 +4,7 @@ Simple blackjack application implemented using angular.js
 
 # SETUP & INSTALL
 
-tar -zxvf blackjack.tar.gz && cd blackjack
+tar -xvf blackjack.tar.gz && cd blackjack
 npm install
 bower install
 grunt server
