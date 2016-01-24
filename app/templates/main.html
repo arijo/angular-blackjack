@@ -1,0 +1,66 @@
+<div class="row" style="height: 100%">
+  <div class="game table col-md-12">
+
+    <div class="row"> 
+      <div class="dealer side col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">Dealer's Hand ({{dealer.score()}})</div>
+          <div class="panel-body">
+            <div class="cards">
+              <div class="card" ng-repeat="card in dealer.hand">
+                <img ng-src="/images/cards/{{card.url}}"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <div class="row"> 
+      <div class="player positions col-md-12">
+        <div class="position position-{{p.id}} col-md-4" ng-repeat="p in positions">
+          <div ng-hide="p.empty">
+            <div class="panel panel-default">
+              <div class="panel-heading" ng-hide="p.player.busted || p.player.winner || p.player.looser">
+                {{p.player.name}}, your current score is {{p.player.score()}}</div>
+              <div class="panel-heading" ng-class="{busted: p.player.busted}" 
+                ng-show="p.player.busted">{{p.player.name}}, you are busted!</div>
+              <div class="panel-heading" ng-class="{winner: p.player.winner}"
+                ng-show="p.player.winner">{{p.player.name}}, you have won!</div>
+              <div class="panel-heading" ng-class="{looser: p.player.looser && !p.player.busted}"
+                ng-show="p.player.looser && !p.player.busted">{{p.player.name}}, you have lost!</div>
+              <div class="panel-body">
+                <div class="cards">
+                  <div class="card" ng-repeat="card in p.player.hand">
+                    <img ng-src="/images/cards/{{card.url}}"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="controls" ng-controller="ControlsCtl">
+              <div ng-include src="'app/templates/controls.html'" ng-show="player.playing"></div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">{{p.player.name}} Score</div>
+              <div class="panel-body">
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>
+                      <td>Bid</td>
+                      <td>£{{p.player.bid}}</td>
+                    </tr>
+                    <tr>
+                      <td>Balance</td>
+                      <td>£{{p.player.balance}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+  </div>
+</div>

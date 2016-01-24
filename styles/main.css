@@ -1,0 +1,51 @@
+html, body, .app {
+  height: 100%;
+  background: url("/images/felt.jpg");
+}
+html .dealer, body .dealer, .app .dealer {
+  margin-top: 20px;
+}
+html .table, body .table, .app .table {
+  height: 100%;
+}
+html .table .cards .card, body .table .cards .card, .app .table .cards .card {
+  display: inline-block;
+  margin: 3px;
+}
+html .table .cards .card img, body .table .cards .card img, .app .table .cards .card img {
+  width: 90px;
+  height: 130px;
+}
+html .table .controls, html .table table, html .table td, body .table .controls, body .table table, body .table td, .app .table .controls, .app .table table, .app .table td {
+  margin: 10px 0;
+}
+html .table .panel, body .table .panel, .app .table .panel {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+html .table .panel .panel-heading, body .table .panel .panel-heading, .app .table .panel .panel-heading {
+  font-weight: bold;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+html .table .panel .panel-heading.winner, body .table .panel .panel-heading.winner, .app .table .panel .panel-heading.winner {
+  background-color: rgba(144, 238, 244, 0.5);
+}
+html .table .panel .panel-heading.busted, html .table .panel .panel-heading.looser, body .table .panel .panel-heading.busted, body .table .panel .panel-heading.looser, .app .table .panel .panel-heading.busted, .app .table .panel .panel-heading.looser {
+  background-color: rgba(255, 160, 122, 0.5);
+}
+html .table .panel .panel-body, body .table .panel .panel-body, .app .table .panel .panel-body {
+  background-color: transparent;
+}
+html .table .panel .panel-body button, body .table .panel .panel-body button, .app .table .panel .panel-body button {
+  opacity: 0.8;
+}
+html .table .panel .panel-body .table, body .table .panel .panel-body .table, .app .table .panel .panel-body .table {
+  background-color: transparent;
+}
+html .table .panel .panel-body .table tr:nth-of-type(even), html .table .panel .panel-body .table tr:nth-of-type(odd), body .table .panel .panel-body .table tr:nth-of-type(even), body .table .panel .panel-body .table tr:nth-of-type(odd), .app .table .panel .panel-body .table tr:nth-of-type(even), .app .table .panel .panel-body .table tr:nth-of-type(odd) {
+  background-color: rgba(245, 245, 245, 0.5);
+}
+html .table .panel .panel-body .table tr:nth-of-type(even) td, html .table .panel .panel-body .table tr:nth-of-type(odd) td, body .table .panel .panel-body .table tr:nth-of-type(even) td, body .table .panel .panel-body .table tr:nth-of-type(odd) td, .app .table .panel .panel-body .table tr:nth-of-type(even) td, .app .table .panel .panel-body .table tr:nth-of-type(odd) td {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=main.css.map */

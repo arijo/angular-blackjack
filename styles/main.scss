@@ -1,0 +1,51 @@
+html, body, .app {
+  height: 100%;
+  background: url('/images/felt.jpg');
+  .dealer {
+    margin-top: 20px;
+  }
+  .table {
+    height: 100%;
+    .cards {
+      .card {
+        display: inline-block;
+        margin: 3px;
+        img {
+          width: 90px;
+          height: 130px;
+        }
+      } 
+    }
+    .controls, table, td {
+      margin: 10px 0;
+    }
+    .panel {
+      background-color: rgba(0,0,0,0.5);
+      .panel-heading {
+        font-weight: bold;
+        background-color: rgba(245,245,245,0.5);
+        &.winner {
+          background-color: rgba(144,238,244,0.5);
+        }
+        &.busted, &.looser {
+          background-color: rgba(255,160,122,0.5);
+        }
+      }
+      .panel-body {
+        background-color: transparent;
+        button {
+          opacity: 0.8;
+        }
+        .table {
+          background-color: transparent;
+          tr:nth-of-type(even), tr:nth-of-type(odd) {
+            background-color: rgba(245,245,245,0.5);
+            td {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

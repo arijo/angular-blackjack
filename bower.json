@@ -1,0 +1,10 @@
+{
+  "name": "ecommerce",
+  "private": "true",
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "",
+    "bootstrap": "",
+    "angular-async-series": "~1.0.0"
+  }
+}
