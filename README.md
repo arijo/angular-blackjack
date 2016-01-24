@@ -12,6 +12,6 @@ bower install
 
 grunt server
 
-Goto http://localhost:8000 and start playing!
+Goto <a href="http://localhost:8000">http://localhost:8000</a> and start playing!
 
 Refresh the page after the end of the game to play again.
