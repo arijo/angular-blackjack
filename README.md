@@ -16,7 +16,3 @@ Goto <a href="http://localhost:8000">http://localhost:8000</a> and start playing
 
 Refresh the page after the end of the game to play again.
 
-# DEMO
-
-<a href="https://rawgit.com/arijo/angular-blackjack.git/demo/index.html">Click here to see the demo</a>
-
